@@ -46,7 +46,7 @@ def List(request):
 	return render(request,'list.html',{})
 
 def Results(request):
-	context = {"data":l,"image":image}
+	context = {"data":l,"image":image[0]}
 	return render(request,'home.html',context)
 
 
